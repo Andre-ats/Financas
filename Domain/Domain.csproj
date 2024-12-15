@@ -32,4 +32,11 @@
         <PackageReference Include="System.Data.SQLite.Core" Version="1.0.118" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Factory\" />
+      <Folder Include="Repository\" />
+      <Folder Include="UseCase\" />
+      <Folder Include="ValueObject\" />
+    </ItemGroup>
+
 </Project>
