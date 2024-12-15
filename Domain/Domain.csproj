@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Financas</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="EntityFramework" Version="6.4.4" />
+        <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0-preview5.24024.3" />
+        <PackageReference Include="Microsoft.Data.SqlClient.SNI.runtime" Version="5.2.0" />
+        <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="9.0.0-preview.1.24081.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0-preview.1.24081.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers" Version="9.0.0-preview.1.24081.2" />
+
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0-preview.1.24081.2">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.0-preview.1.24081.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.0-preview.1.24081.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="9.0.0-preview.1.24081.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0-preview.1.24081.2" />
+
+        <PackageReference Include="MySql.EntityFrameworkCore" Version="8.0.0" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.0-preview.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.5.0" />
+        <PackageReference Include="System.Data.SQLite" Version="1.0.118" />
+        <PackageReference Include="System.Data.SQLite.Core" Version="1.0.118" />
+    </ItemGroup>
+
+</Project>
