@@ -33,7 +33,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Factory\" />
       <Folder Include="Repository\" />
       <Folder Include="UseCase\" />
       <Folder Include="ValueObject\" />

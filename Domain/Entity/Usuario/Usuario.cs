@@ -13,7 +13,7 @@ public class Usuario : IEntity
     {
         Usuario usuario = new Usuario()
         {
-            Id = new Guid(),
+            Id = Guid.NewGuid(),
             Nome = nome,
             ReceitaInicial = receitainicial,
             ReceitaAtual = receitainicial,

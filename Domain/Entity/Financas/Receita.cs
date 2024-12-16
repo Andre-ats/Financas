@@ -8,18 +8,18 @@ public class Receita : IEntity
     public long ReceitaDinheiro { get; protected set; }
     public DateTime DataReceita { get; protected set; }
 
-    public static Receita CreateReceita(string tituloReceita, string descricaoReceita, string estabelecimento,
-        long Receitadinheiro, DateTime dataReceita)
+    public static Receita CreateReceita(string tituloreceita, string descricaoreceita, string estabelecimento,
+        long receitadinheiro, DateTime dataReceita)
     {
-        Receita Receita = new Receita()
+        Receita receita = new Receita()
         {
             Id = Guid.NewGuid(),
-            TituloReceita = tituloReceita,
-            DescricaoReceita = descricaoReceita,
+            TituloReceita = tituloreceita,
+            DescricaoReceita = descricaoreceita,
             Estabelecimento = estabelecimento,
-            ReceitaDinheiro = Receitadinheiro,
+            ReceitaDinheiro = receitadinheiro,
             DataReceita = dataReceita
         };
-        return Receita;
+        return receita;
     }
 }
