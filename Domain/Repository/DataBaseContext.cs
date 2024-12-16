@@ -11,7 +11,7 @@ public class DataBaseContext : DbContext
     {
         base.OnConfiguring(optionsBuilder);
         
-        optionsBuilder.UseNpgsql("User ID=andre;Host=localhost;Port=5432;DataBase=financasBase;Password=1234;Include Error Detail=True");
+        optionsBuilder.UseNpgsql("User ID=financauser;Host=localhost;Port=5432;DataBase=financasbase;Password=1234;Include Error Detail=True");
         
         AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
         AppContext.SetSwitch("Npgsql.DisableDateTimeInfinityConversions", true);
@@ -41,7 +41,7 @@ public class DataBaseContext : DbContext
         modelBuilder.Entity<Usuario>()
             .Property(x => x.Nome)
             .IsRequired(true)
-            .HasColumnType("NVARCHAR")
+            .HasColumnType("VARCHAR")
             .HasMaxLength(80);
         modelBuilder.Entity<Usuario>()
             .Property(x => x.ReceitaAtual);
@@ -50,12 +50,12 @@ public class DataBaseContext : DbContext
             .IsRequired(true);
         modelBuilder.Entity<Usuario>()
             .Property(x => x.DataDeCadastro)
-            .HasColumnType("DATETIME2");
+            .HasColumnType("timestamptz");
         
         modelBuilder.Entity<Gasto>()
             .Property(x => x.TituloGasto)
             .IsRequired(true)
-            .HasColumnType("NVARCHAR")
+            .HasColumnType("VARCHAR")
             .HasMaxLength(80);
         modelBuilder.Entity<Gasto>()
             .Property(x => x.DescricaoGasto)
@@ -67,7 +67,7 @@ public class DataBaseContext : DbContext
             .HasMaxLength(80);
         modelBuilder.Entity<Gasto>()
             .Property(x => x.DataGasto)
-            .HasColumnType("DATETIME2")
+            .HasColumnType("timestamptz")
             .IsRequired(true);
         modelBuilder.Entity<Gasto>()
             .Property(x => x.GastoDinheiro)
@@ -76,7 +76,7 @@ public class DataBaseContext : DbContext
         modelBuilder.Entity<Receita>()
             .Property(x => x.TituloReceita)
             .IsRequired(true)
-            .HasColumnType("NVARCHAR")
+            .HasColumnType("VARCHAR")
             .HasMaxLength(80);
         modelBuilder.Entity<Receita>()
             .Property(x => x.TituloReceita)
@@ -88,7 +88,7 @@ public class DataBaseContext : DbContext
             .HasMaxLength(80);
         modelBuilder.Entity<Receita>()
             .Property(x => x.DataReceita)
-            .HasColumnType("DATETIME2")
+            .HasColumnType("timestamptz")
             .IsRequired(true);
         modelBuilder.Entity<Receita>()
             .Property(x => x.ReceitaDinheiro)
@@ -97,5 +97,5 @@ public class DataBaseContext : DbContext
     
     public System.Data.Entity.DbSet<Gasto> GastoDB { get; set; }
     public System.Data.Entity.DbSet<Receita> ReceitaDB { get; set; }
-    public System.Data.Entity.DbSet<Usuario> UsaurioDB { get; set; }
+    public System.Data.Entity.DbSet<Usuario> UsuarioDB { get; set; }
 } 

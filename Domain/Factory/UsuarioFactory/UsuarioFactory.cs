@@ -34,12 +34,6 @@ public class UsuarioFactory
         this._ReceitaAtual = receitaatual;
         return this;
     }
-    
-    public UsuarioFactory SetDataDeCadastro()
-    {
-        this._DataDeCadastro = DateTime.Now;
-        return this;
-    }
 
     public bool Validar()
     {
@@ -56,7 +50,7 @@ public class UsuarioFactory
             _Nome,
             _ReceitaInicial,
             _ReceitaAtual,
-            _DataDeCadastro
+            DateTime.Now
         );
         
         this.init();
