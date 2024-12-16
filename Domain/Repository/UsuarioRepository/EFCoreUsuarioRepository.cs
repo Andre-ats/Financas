@@ -6,9 +6,25 @@ public class EFCoreUsuarioRepository : IUsuarioRepository
 {
     private DataBaseContext _dataBaseContext;
 
-    public bool CreateUsuario(Usuario usuario)
+    public void CreateUsuario(Usuario usuario)
     {
+        foreach (var property in typeof(Usuario).GetProperties())
+        {
+            var value = property.GetValue(usuario);
+            Console.WriteLine($"{property.Name}: {value}");
+        }
+
+
         _dataBaseContext.UsuarioDB.Add(usuario);
-        return _dataBaseContext.SaveChanges() > 0;
+    
+        try
+        {
+            _dataBaseContext.SaveChanges();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Erro ao salvar no banco: " + ex.Message);
+            throw;
+        }
     }
 }

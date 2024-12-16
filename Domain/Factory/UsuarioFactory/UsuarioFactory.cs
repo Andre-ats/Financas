@@ -4,17 +4,17 @@ namespace Financas.Factory.UsuarioFactory;
 
 public class UsuarioFactory
 {
-    private string _Nome { get; set; } = String.Empty;
+    private string _Nome { get; set; }
     private long _ReceitaInicial { get; set; }
     private long _ReceitaAtual { get; set; }
-    private DateTime _DataDeCadastro { get; set; }
+    private DateTimeOffset _DataDeCadastro { get; set; }
 
     private void init()
     {
         _Nome = "";
         _ReceitaInicial = 0;
         _ReceitaAtual = 0;
-        _DataDeCadastro = new DateTime();
+        _DataDeCadastro = DateTimeOffset.UtcNow;
     }
 
     public UsuarioFactory SetNome(string nome)
@@ -50,7 +50,7 @@ public class UsuarioFactory
             _Nome,
             _ReceitaInicial,
             _ReceitaAtual,
-            DateTime.Now
+            DateTimeOffset.UtcNow
         );
         
         this.init();

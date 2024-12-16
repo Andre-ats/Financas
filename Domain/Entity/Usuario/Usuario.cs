@@ -2,14 +2,14 @@ namespace Financas.Entity.Usuario;
 
 public class Usuario : IEntity
 {
-    public string Nome { get; protected set; } = String.Empty;
+    public string Nome { get; protected set; }
     public long ReceitaInicial { get; protected set; }
     public long ReceitaAtual { get; protected set; }
-    public DateTime DataDeCadastro { get; protected set; }
+    public DateTimeOffset DataDeCadastro { get; protected set; }
     
     private Usuario(){}
 
-    public static Usuario CreateUsuario(string nome, long receitainicial, long receitaatual, DateTime dataCriacao)
+    public static Usuario CreateUsuario(string nome, long receitainicial, long receitaatual, DateTimeOffset dataCriacao)
     {
         Usuario usuario = new Usuario()
         {

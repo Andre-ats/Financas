@@ -16,13 +16,11 @@ public class CadastrarUsuarioUseCase : ICadastrarUsuarioUseCase
         {
             Usuario usuario = new UsuarioFactory()
                 .SetNome(_useCaseInput.Nome)
-                .SetReceitaAtual(_useCaseInput.ReceitaAtual)
+                .SetReceitaAtual(_useCaseInput.ReceitaInicial)
                 .SetReceitaInicial(_useCaseInput.ReceitaInicial)
                 .Build();
 
-            _ = UsuarioRepository.CreateUsuario(usuario)
-                ? true
-                : throw new Exception("Nao foi possivel criar o usuario");
+            UsuarioRepository.CreateUsuario(usuario);
 
             return new CadastrarUsuarioUseCaseOutput()
             {

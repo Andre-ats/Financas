@@ -4,5 +4,5 @@ namespace Financas.Repository.UsuarioRepository;
 
 public interface IUsuarioRepository
 {
-    public bool CreateUsuario(Usuario usuario);
+    public void CreateUsuario(Usuario usuario);
 }

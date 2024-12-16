@@ -48,10 +48,10 @@ namespace Financas.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
-                    Nome = table.Column<string>(type: "VARCHAR", maxLength: 80, nullable: false),
+                    Nome = table.Column<string>(type: "VARCHAR", maxLength: 80, nullable: true),
                     ReceitaInicial = table.Column<long>(type: "bigint", nullable: false),
                     ReceitaAtual = table.Column<long>(type: "bigint", nullable: false),
-                    DataDeCadastro = table.Column<DateTime>(type: "timestamptz", nullable: false)
+                    DataDeCadastro = table.Column<DateTimeOffset>(type: "timestamptz", nullable: false)
                 },
                 constraints: table =>
                 {

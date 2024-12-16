@@ -39,15 +39,16 @@ public class DataBaseContext : DbContext
         });
 
         modelBuilder.Entity<Usuario>()
+            .HasKey(x => x.Id);
+        modelBuilder.Entity<Usuario>()
             .Property(x => x.Nome)
-            .IsRequired(true)
+            .IsRequired(false)
             .HasColumnType("VARCHAR")
             .HasMaxLength(80);
         modelBuilder.Entity<Usuario>()
             .Property(x => x.ReceitaAtual);
         modelBuilder.Entity<Usuario>()
-            .Property(x => x.ReceitaInicial)
-            .IsRequired(true);
+            .Property(x => x.ReceitaInicial);
         modelBuilder.Entity<Usuario>()
             .Property(x => x.DataDeCadastro)
             .HasColumnType("timestamptz");
@@ -95,7 +96,7 @@ public class DataBaseContext : DbContext
             .IsRequired(true); 
     }
     
-    public System.Data.Entity.DbSet<Gasto> GastoDB { get; set; }
-    public System.Data.Entity.DbSet<Receita> ReceitaDB { get; set; }
-    public System.Data.Entity.DbSet<Usuario> UsuarioDB { get; set; }
+    public DbSet<Gasto> GastoDB { get; set; }
+    public DbSet<Receita> ReceitaDB { get; set; }
+    public DbSet<Usuario> UsuarioDB { get; set; }
 } 

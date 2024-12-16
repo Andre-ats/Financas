@@ -86,11 +86,10 @@ namespace Financas.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<DateTime>("DataDeCadastro")
+                    b.Property<DateTimeOffset>("DataDeCadastro")
                         .HasColumnType("timestamptz");
 
                     b.Property<string>("Nome")
-                        .IsRequired()
                         .HasMaxLength(80)
                         .HasColumnType("VARCHAR");
 

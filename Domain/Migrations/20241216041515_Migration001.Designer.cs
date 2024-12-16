@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Financas.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    [Migration("20241216025502_Migration001")]
+    [Migration("20241216041515_Migration001")]
     partial class Migration001
     {
         /// <inheritdoc />
@@ -89,11 +89,10 @@ namespace Financas.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<DateTime>("DataDeCadastro")
+                    b.Property<DateTimeOffset>("DataDeCadastro")
                         .HasColumnType("timestamptz");
 
                     b.Property<string>("Nome")
-                        .IsRequired()
                         .HasMaxLength(80)
                         .HasColumnType("VARCHAR");
 

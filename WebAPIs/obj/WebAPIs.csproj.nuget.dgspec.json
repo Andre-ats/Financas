@@ -4,14 +4,14 @@
     "/home/andre/Documents/Programacao/Pessoais/Financas/Financas/WebAPIs/WebAPIs.csproj": {}
   },
   "projects": {
-    "/home/andre/Documents/Programacao/Pessoais/Financas/Financas/WebAPIs/WebAPIs.csproj": {
+    "/home/andre/Documents/Programacao/Pessoais/Financas/Financas/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/andre/Documents/Programacao/Pessoais/Financas/Financas/WebAPIs/WebAPIs.csproj",
-        "projectName": "WebAPIs",
-        "projectPath": "/home/andre/Documents/Programacao/Pessoais/Financas/Financas/WebAPIs/WebAPIs.csproj",
+        "projectUniqueName": "/home/andre/Documents/Programacao/Pessoais/Financas/Financas/Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/home/andre/Documents/Programacao/Pessoais/Financas/Financas/Domain/Domain.csproj",
         "packagesPath": "/home/andre/.nuget/packages/",
-        "outputPath": "/home/andre/Documents/Programacao/Pessoais/Financas/Financas/WebAPIs/obj/",
+        "outputPath": "/home/andre/Documents/Programacao/Pessoais/Financas/Financas/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/andre/.nuget/NuGet/NuGet.Config"
@@ -37,6 +37,181 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.0-preview5.24024.3, )"
+            },
+            "Microsoft.Data.SqlClient.SNI.runtime": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "Microsoft.Data.Sqlite.Core": {
+              "target": "Package",
+              "version": "[9.0.0-preview.1.24081.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0-preview.1.24081.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[9.0.0-preview.1.24081.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0-preview.1.24081.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[9.0.0-preview.1.24081.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0-preview.1.24081.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.0-preview.1.24081.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite.Core": {
+              "target": "Package",
+              "version": "[9.0.0-preview.1.24081.2, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.0-preview.1, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.118, )"
+            },
+            "System.Data.SQLite.Core": {
+              "target": "Package",
+              "version": "[1.0.118, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.110/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/andre/Documents/Programacao/Pessoais/Financas/Financas/WebAPIs/WebAPIs.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/andre/Documents/Programacao/Pessoais/Financas/Financas/WebAPIs/WebAPIs.csproj",
+        "projectName": "WebAPIs",
+        "projectPath": "/home/andre/Documents/Programacao/Pessoais/Financas/Financas/WebAPIs/WebAPIs.csproj",
+        "packagesPath": "/home/andre/.nuget/packages/",
+        "outputPath": "/home/andre/Documents/Programacao/Pessoais/Financas/Financas/WebAPIs/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/andre/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/andre/Documents/Programacao/Pessoais/Financas/Financas/Domain/Domain.csproj": {
+                "projectPath": "/home/andre/Documents/Programacao/Pessoais/Financas/Financas/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Google.Cloud.Storage.V1": {
+              "target": "Package",
+              "version": "[4.10.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Newtonsoft.Json.Bson": {
+              "target": "Package",
+              "version": "[1.0.3-beta1, )"
+            },
+            "Swashbuckle": {
+              "target": "Package",
+              "version": "[5.6.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.Newtonsoft": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.Core": {
+              "target": "Package",
+              "version": "[5.6.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

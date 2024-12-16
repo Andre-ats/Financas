@@ -4,7 +4,6 @@ namespace Financas.UseCase.UsuarioUseCase.CriarUsuario;
 
 public class CadastrarUsuarioUseCaseInput : IUseCaseInput
 {
-    public string? Nome;
-    public long ReceitaInicial;
-    public long ReceitaAtual;
+    public string Nome { get; set; }
+    public long ReceitaInicial { get; set; }
 }
