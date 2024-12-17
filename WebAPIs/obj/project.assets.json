@@ -5974,11 +5974,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/andre/Documents/Programacao/Pessoais/Financas/Financas/WebAPIs/WebAPIs.csproj",
+      "projectUniqueName": "/home/andre/Documents/Programacao/Pessoais/Financas/FinancasBack/WebAPIs/WebAPIs.csproj",
       "projectName": "WebAPIs",
-      "projectPath": "/home/andre/Documents/Programacao/Pessoais/Financas/Financas/WebAPIs/WebAPIs.csproj",
+      "projectPath": "/home/andre/Documents/Programacao/Pessoais/Financas/FinancasBack/WebAPIs/WebAPIs.csproj",
       "packagesPath": "/home/andre/.nuget/packages/",
-      "outputPath": "/home/andre/Documents/Programacao/Pessoais/Financas/Financas/WebAPIs/obj/",
+      "outputPath": "/home/andre/Documents/Programacao/Pessoais/Financas/FinancasBack/WebAPIs/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/andre/.nuget/NuGet/NuGet.Config"
@@ -5993,8 +5993,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/andre/Documents/Programacao/Pessoais/Financas/Financas/Domain/Domain.csproj": {
-              "projectPath": "/home/andre/Documents/Programacao/Pessoais/Financas/Financas/Domain/Domain.csproj"
+            "/home/andre/Documents/Programacao/Pessoais/Financas/FinancasBack/Domain/Domain.csproj": {
+              "projectPath": "/home/andre/Documents/Programacao/Pessoais/Financas/FinancasBack/Domain/Domain.csproj"
             }
           }
         }

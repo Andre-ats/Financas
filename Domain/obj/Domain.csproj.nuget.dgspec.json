@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/andre/Documents/Programacao/Pessoais/Financas/Financas/Domain/Domain.csproj": {}
+    "/home/andre/Documents/Programacao/Pessoais/Financas/FinancasBack/Domain/Domain.csproj": {}
   },
   "projects": {
-    "/home/andre/Documents/Programacao/Pessoais/Financas/Financas/Domain/Domain.csproj": {
+    "/home/andre/Documents/Programacao/Pessoais/Financas/FinancasBack/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/andre/Documents/Programacao/Pessoais/Financas/Financas/Domain/Domain.csproj",
+        "projectUniqueName": "/home/andre/Documents/Programacao/Pessoais/Financas/FinancasBack/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/home/andre/Documents/Programacao/Pessoais/Financas/Financas/Domain/Domain.csproj",
+        "projectPath": "/home/andre/Documents/Programacao/Pessoais/Financas/FinancasBack/Domain/Domain.csproj",
         "packagesPath": "/home/andre/.nuget/packages/",
-        "outputPath": "/home/andre/Documents/Programacao/Pessoais/Financas/Financas/Domain/obj/",
+        "outputPath": "/home/andre/Documents/Programacao/Pessoais/Financas/FinancasBack/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/andre/.nuget/NuGet/NuGet.Config"

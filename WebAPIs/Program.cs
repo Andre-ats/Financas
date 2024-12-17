@@ -18,7 +18,7 @@ builder.Services.AddCors(opt =>
     });
 });
 
-builder.Services.AddScoped<DataBaseContext, DataBaseContext>();
+builder.Services.AddScoped<DataBaseContext>();
 
 builder.Services.AddScoped<IUsuarioRepository, EFCoreUsuarioRepository>();
 builder.Services.AddScoped<ICadastrarUsuarioUseCase, CadastrarUsuarioUseCase>();

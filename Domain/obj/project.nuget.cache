@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wJja79m5kA8=",
+  "dgSpecHash": "m2rBxylMzwg=",
   "success": true,
-  "projectFilePath": "/home/andre/Documents/Programacao/Pessoais/Financas/Financas/Domain/Domain.csproj",
+  "projectFilePath": "/home/andre/Documents/Programacao/Pessoais/Financas/FinancasBack/Domain/Domain.csproj",
   "expectedPackageFiles": [
     "/home/andre/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/home/andre/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",

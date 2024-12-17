@@ -6,6 +6,11 @@ public class EFCoreUsuarioRepository : IUsuarioRepository
 {
     private DataBaseContext _dataBaseContext;
 
+    public EFCoreUsuarioRepository(DataBaseContext dataBaseContext)
+    {
+        _dataBaseContext = dataBaseContext;
+    }
+
     public void CreateUsuario(Usuario usuario)
     {
         foreach (var property in typeof(Usuario).GetProperties())
