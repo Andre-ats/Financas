@@ -1,6 +1,8 @@
 using Financas.Repository;
+using Financas.Repository.GastoRepository;
 using Financas.Repository.ReceitaRepository;
 using Financas.Repository.UsuarioRepository;
+using Financas.UseCase.GastoUseCase.CriarGasto;
 using Financas.UseCase.ReceitaUseCase.CriarReceita;
 using Financas.UseCase.UsuarioUseCase.CriarUsuario;
 using Microsoft.Extensions.Logging;
@@ -27,6 +29,9 @@ builder.Services.AddScoped<ICadastrarUsuarioUseCase, CadastrarUsuarioUseCase>();
 
 builder.Services.AddScoped<IReceitaRepository, EFCoreReceitaRepository>();
 builder.Services.AddScoped<ICadastrarReceitaUseCase, CadastrarReceitaUseCase>();
+
+builder.Services.AddScoped<IGastoRepository, EFCoreGastoRepository>();
+builder.Services.AddScoped<ICadastrarGastoUseCase, CadastrarGastoUseCase>();
 
 builder.Services.AddControllers();
 

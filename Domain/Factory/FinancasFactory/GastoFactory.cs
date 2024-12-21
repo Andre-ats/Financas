@@ -39,6 +39,10 @@ public class GastoFactory
     
     public GastoFactory SetGastoDinheiro(long gastodinheiro)
     {
+        if (gastodinheiro > 0)
+        {
+            gastodinheiro = (gastodinheiro) * -1;
+        }
         this._GastoDinheiro = gastodinheiro;
         return this;
     }
