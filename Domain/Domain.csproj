@@ -34,6 +34,7 @@
 
     <ItemGroup>
       <Folder Include="Migrations\" />
+      <Folder Include="Repository\GastoRepository\" />
       <Folder Include="ValueObject\" />
     </ItemGroup>
 

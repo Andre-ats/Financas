@@ -7,6 +7,12 @@ public class Usuario : IEntity
     public long ReceitaAtual { get; protected set; }
     public DateTimeOffset DataDeCadastro { get; protected set; }
     
+    public long UpdateReceitaAtual(long novaReceita)
+    {
+        ReceitaAtual = novaReceita;
+        return ReceitaAtual;
+    }
+    
     private Usuario(){}
 
     public static Usuario CreateUsuario(string nome, long receitainicial, long receitaatual, DateTimeOffset dataCriacao)

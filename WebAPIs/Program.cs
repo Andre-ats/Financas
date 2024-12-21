@@ -1,5 +1,7 @@
 using Financas.Repository;
+using Financas.Repository.ReceitaRepository;
 using Financas.Repository.UsuarioRepository;
+using Financas.UseCase.ReceitaUseCase.CriarReceita;
 using Financas.UseCase.UsuarioUseCase.CriarUsuario;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Converters;
@@ -22,6 +24,9 @@ builder.Services.AddScoped<DataBaseContext>();
 
 builder.Services.AddScoped<IUsuarioRepository, EFCoreUsuarioRepository>();
 builder.Services.AddScoped<ICadastrarUsuarioUseCase, CadastrarUsuarioUseCase>();
+
+builder.Services.AddScoped<IReceitaRepository, EFCoreReceitaRepository>();
+builder.Services.AddScoped<ICadastrarReceitaUseCase, CadastrarReceitaUseCase>();
 
 builder.Services.AddControllers();
 
